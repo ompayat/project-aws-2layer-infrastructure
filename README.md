@@ -1,12 +1,12 @@
-# Project-503 : Blog Page Application (Django) deployed on AWS Application Load Balancer with Auto Scaling, S3, Relational Database Service(RDS), VPC's Components, Lambda, DynamoDB and Cloudfront with Route 53
+# project-aws-2layer-infrastructure : Blog Page Application (Django) deployed on AWS Application Load Balancer with Auto Scaling, S3, Relational Database Service(RDS), VPC's Components, Lambda, DynamoDB and Cloudfront with Route 53
 
 ## Description
 
-The Clarusway Blog Page Application aims to deploy blog application as a web application written Django Framework on AWS Cloud Infrastructure. This infrastructure has Application Load Balancer with Auto Scaling Group of Elastic Compute Cloud (EC2) Instances and Relational Database Service (RDS) on defined VPC. Also, The Cloudfront and Route 53 services are located in front of the architecture and manage the traffic in secure. User is able to upload pictures and videos on own blog page and these are kept on S3 Bucket. This architecture will be created by Firms DevOps Guy.
+The Blog Page Application aims to deploy blog application as a web application written Django Framework on AWS Cloud Infrastructure. This infrastructure has Application Load Balancer with Auto Scaling Group of Elastic Compute Cloud (EC2) Instances and Relational Database Service (RDS) on defined VPC. Also, The Cloudfront and Route 53 services are located in front of the architecture and manage the traffic in secure. User is able to upload pictures and videos on own blog page and these are kept on S3 Bucket. This architecture will be created by Firms DevOps Guy.
 
 ## Problem Statement
 
-![Project_004](capstone.jpg)
+(./infrastructure.png)
 
 - Your company has recently ended up a project that aims to serve as Blog web application on isolated VPC environment. You and your colleagues have started to work on the project. Your Developer team has developed the application and you are going to deploy the app in production environment.
 
@@ -78,9 +78,9 @@ In the architecture, you can configure your infrastructure using the followings,
 
     - Prepare Django environment on EC2 instance based on Developer Notes,
 
-    - Download the "clarusway_aws_capstone" folder from Github repository,
+    - Download the "project-aws-2layer-infrastructure" folder from Github repository,
 
-    - Install the requirements using requirements.txt in 'clarusway_aws_capstone' folder
+    - Install the requirements using requirements.txt in 'project-aws-2layer-infrastructure' folder
 
     - Deploy the Django application on port 80.
 
@@ -88,7 +88,7 @@ In the architecture, you can configure your infrastructure using the followings,
 
     - EC2 Instances type can be configured as `t2.micro`.
 
-    - Instance launched should be tagged `Clarusway AWS Capstone Project`
+    - Instance launched should be tagged `project-aws-2layer-infrastructure`
 
     - Since Django App needs to talk with S3, S3 full access role must be attached EC2s. 
 
@@ -170,9 +170,7 @@ In the architecture, you can configure your infrastructure using the followings,
 ## Project Skeleton 
 
 ```text
-clarusway_blog_proj (folder)
-|
-|----Readme.md               # Given to the students (Definition of the project)
+project-aws-2layer-infrastructure (folder)
 |----src (folder)            # Given to the students (Django Application's )
 |----requirements.txt        # Given to the students (txt file)
 |----lambda_function.py      # Given to the students (python file)
@@ -256,7 +254,7 @@ clarusway_blog_proj (folder)
 
 - Step 4: Create two S3 Buckets and set one of these as static website.
 
-- Step 5: Download or clone project definition from `Clarusway` repo on Github 
+- Step 5: Download or clone project definition from `ompayat` repo on Github 
 
 - Step 6: Prepare your Github repository 
 
